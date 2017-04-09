@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -eq 2 ];then
+	sed -i '$d' wnsr.txt
+	echo "$1	$2	100" >> wnsr.txt
+	echo "END_TABLE" >> wnsr.txt
+elif [ $# -eq 3 ];then
+	sed -i '$d' wnsr.txt
+	echo "$1	$2	$3" >> wnsr.txt
+	echo "END_TABLE" >> wnsr.txt
+else
+	echo "参数错误"
+fi
