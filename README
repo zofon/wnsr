@@ -1,1 +1,22 @@
-参考连接：http://blog.sina.com.cn/s/blog_65bc42cb0100jij0.html
+输入法介绍：
+万能输入法的码表在网上很多，很多比较老，又没有安装说明。本仓库维护一个ubuntu下的万能输入法，尽力更新。
+
+安装输入法：
+	chomod +x INSTALL
+	./INSTALL
+
+
+文件说明：
+	wnsr.dia输入法图标的源文件
+	wnsr.svg输入法图表文件
+	wnsr.txt码表文件
+	INSTALL	安装文件
+		./INSTALL	安装输入法
+	ADD添加新词到字库
+		./ADD anzhuangshurufa 安装输入法#将anzhuangshurufa添加到字库中。
+
+
+
+
+
+参考：http://blog.sina.com.cn/s/blog_65bc42cb0100jij0.html

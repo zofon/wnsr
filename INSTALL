@@ -1,0 +1,16 @@
+#!/bin/bash
+#配置自定义的五笔输入法
+
+#设置图标
+echo "Copy icons"
+sudo cp wnsr.svg /usr/share/ibus-table/icons/
+
+#创建字典
+echo "创建字典（DB文件）"
+sudo ibus-table-createdb -s wnsr.txt
+sudo cp wnsr.db /usr/share/ibus-table/tables/
+rm -f wnsr.db
+echo "创建完成"
+
+killall ibus-damon
+ibus-daemon -d
