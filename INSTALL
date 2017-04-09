@@ -12,5 +12,6 @@ sudo cp wnsr.db /usr/share/ibus-table/tables/
 rm -f wnsr.db
 echo "创建完成"
 
-killall ibus-damon
-ibus-daemon -d
+ibus-daemon -rxd
+#killall ibus-damon
+#ibus-daemon -d
