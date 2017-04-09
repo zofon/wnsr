@@ -10,8 +10,9 @@ echo "创建字典（DB文件）"
 sudo ibus-table-createdb -s wnsr.txt
 sudo cp wnsr.db /usr/share/ibus-table/tables/
 rm -f wnsr.db
-echo "创建完成"
+echo "字典创建完成，重启输入法"
 
 ibus-daemon -rxd
+echo "重启完成，请选择wnsr输入法"
 #killall ibus-damon
 #ibus-daemon -d
